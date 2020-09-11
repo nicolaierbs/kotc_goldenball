@@ -102,10 +102,10 @@ def sim_results(results):
 strategies = ['none', 'early', 'last_30', 'trailing_last_360', 'trailing_last_120', 'leading_last_120']
 for strategy in strategies:
     simulation = defaultdict(int)
-    for i in range(1000):
+    for i in range(100000):
         simulation['total'] += 1
         for n in range(3, 6):
             if play(n, strategy):
                 simulation[n] += 1
 
-    print('Strategy ' + strategy + ': ' + sim_results(simulation))
+    print(sim_results(simulation) + ' (' + strategy + ')')

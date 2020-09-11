@@ -33,12 +33,12 @@ Differences of few percent points are within error margins.
 |Strategy| 3 Teams | 4 Teams | 5 Teams | Comments |
 |---|---|---|---|---|
 | Do not use it | 33%| 75% | 80% | All teams have same chance of winning |
-| Use it as early as possible | 33%| 74% | 80% | Basically no advantage |
-| Use it only in last 30 seconds | **43%**| 74% | 79% | Use this strategy in the final round! |
-| Last 6 minutes on trailing teams | 35%| 75% | 80% | Higher success rate for elimination phases but within error margin |
+| Use it as early as possible | **39%**| **80%** | **84%** | Best strategy |
+| Use it only in last 30 seconds | 33%| 75% | 80% |  Sounds good, but in most cases you will not be able to use it |
+| Last 6 minutes on trailing teams | 38%| 77% | 81% | Better than not using it |
 | Last 2 minutes on trailing teams | 35%| 75% | 80% | Same as above |
-| Last 2 minutes on leading teams | 38%| 76% | 80% | Slightly higher success rate for last phase |
+| Last 2 minutes on leading teams | 35%| 76% | 80% | Slightly higher success rate for last phase |
 
 
 ## Summary
-If you compete in King of the Court and you have a golden ball available, the best suggestion is to not use it until the last phase and use it only in the last 30 seconds.
+If you compete in King of the Court and you have a golden ball available, just use it!
