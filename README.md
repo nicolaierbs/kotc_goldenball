@@ -8,7 +8,7 @@ This could be a huge advantage as the team can continue a sideout streak.
 The only question is when to use the golden ball.
 
 ## Golden ball strategies
-As one king of the court session contains many rallies, there is a huge number of situations in which the golden ball can be used.
+As one King of the Court session contains many rallies, there is a huge number of situations in which the golden ball can be used.
 The players do not have any option to calculate the situation on the fly and no coaches are allowed.
 Hence, I recommend to stick to a single strategy which is easy to apply:
 * Do not use it: Just for comparison or for those teams without the need for any advantage.
@@ -33,9 +33,11 @@ With three teams your goal is to win, while with four or five teams, you just wa
 | Do not use it | 33%| 75% | 80% | All teams have same chance of winning |
 | Use it as early as possible | 33%| 74% | 80% | Basically no advantage |
 | Use it only in last 30 seconds | **43%**| 74% | 79% | Use this strategy in the final round! |
-| Last 6 minutes on trailing teams | 35%| 75% | 80% |  |
-| Last 2 minutes on trailing teams | 35%| 75% | 80% |  |
-| Last 2 minutes on leading teams | 38%| 76% | 80% |  |
-
+| Last 6 minutes on trailing teams | 35%| 75% | 80% | Higher success rate for elimination phases but within error margin |
+| Last 2 minutes on trailing teams | 35%| 75% | 80% | Same as above |
+| Last 2 minutes on leading teams | 38%| 76% | 80% | Slightly higher success rate for last phase |
 Keep in mind that a Monte Carlo experiments are not 100% reliable and use random parameters.
 Differences of few percent points are within error margins.
+
+## Summary
+If you compete in King of the Court and you have a golden ball available, the best suggestion is to not use it until the last phase and use it only in the last 30 seconds.
