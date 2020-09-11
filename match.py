@@ -34,7 +34,7 @@ def action_time():
     return rng.poisson(action_time_median)
 
 
-def opponents(score):
+def standing(score):
     return [team[0] for team in sorted(score.items(), key=lambda x: x[1], reverse=True)]
 
 
@@ -46,11 +46,11 @@ def use_strategy(queue, score, time, variant):
     if variant == 'last_30':
         return time < 30
     if variant == 'trailing_last_360':
-        return time < 360 and queue[1] in opponents(score)[-2:]
+        return time < 360 and queue[1] in standing(score)[-2:]
     if variant == 'trailing_last_120':
-        return time < 120 and queue[1] in opponents(score)[-2:]
+        return time < 120 and queue[1] in standing(score)[-2:]
     if variant == 'leading_last_120':
-        return time < 120 and queue[1] in opponents(score)[0:2]
+        return time < 120 and queue[1] in standing(score)[0:2]
 
 
 def play(count, golden_strategy):
@@ -81,11 +81,6 @@ def play(count, golden_strategy):
                 and use_strategy(queue.order(), score, time, strategy):
             # print('used strategy')
             golden_ball_used = True
-            if random.random() < sideout_percentage:
-                score[active_team] += 1
-                queue.sideout(True)
-            else:
-                queue.sideout(False)
         else:
             queue.sideout(False)
 
@@ -93,9 +88,9 @@ def play(count, golden_strategy):
 
     # print(queue.queue)
     if count > 3:
-        return not queue.queue[-1] == 0
+        return not standing(score)[-1] == 0
     else:
-        return queue.queue[0] == 0
+        return standing(score)[0] == 0
 
 
 def sim_results(results):
@@ -107,7 +102,7 @@ def sim_results(results):
 strategies = ['none', 'early', 'last_30', 'trailing_last_360', 'trailing_last_120', 'leading_last_120']
 for strategy in strategies:
     simulation = defaultdict(int)
-    for i in range(10000):
+    for i in range(1000):
         simulation['total'] += 1
         for n in range(3, 6):
             if play(n, strategy):
