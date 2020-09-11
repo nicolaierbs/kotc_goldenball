@@ -27,6 +27,8 @@ This program combines the simulation of king of the court sessions in a Monte Ca
 ## Results
 The results show the success rate.
 With three teams your goal is to win, while with four or five teams, you just want to avoid elimination.
+Keep in mind that a Monte Carlo experiments are not 100% reliable and use random parameters.
+Differences of few percent points are within error margins.
 
 |Strategy| 3 Teams | 4 Teams | 5 Teams | Comments |
 |---|---|---|---|---|
@@ -37,8 +39,6 @@ With three teams your goal is to win, while with four or five teams, you just wa
 | Last 2 minutes on trailing teams | 35%| 75% | 80% | Same as above |
 | Last 2 minutes on leading teams | 38%| 76% | 80% | Slightly higher success rate for last phase |
 
-Keep in mind that a Monte Carlo experiments are not 100% reliable and use random parameters.
-Differences of few percent points are within error margins.
 
 ## Summary
 If you compete in King of the Court and you have a golden ball available, the best suggestion is to not use it until the last phase and use it only in the last 30 seconds.
