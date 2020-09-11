@@ -36,6 +36,7 @@ With three teams your goal is to win, while with four or five teams, you just wa
 | Last 6 minutes on trailing teams | 35%| 75% | 80% | Higher success rate for elimination phases but within error margin |
 | Last 2 minutes on trailing teams | 35%| 75% | 80% | Same as above |
 | Last 2 minutes on leading teams | 38%| 76% | 80% | Slightly higher success rate for last phase |
+
 Keep in mind that a Monte Carlo experiments are not 100% reliable and use random parameters.
 Differences of few percent points are within error margins.
 
